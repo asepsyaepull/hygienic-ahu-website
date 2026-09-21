@@ -1,6 +1,6 @@
 import React from 'react';
 import { SITE_CONTENT } from '../data/site-content';
-import { Mail, Phone, MapPin, MessageSquare, ArrowUpRight } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageSquare, ArrowUpRight, Clock } from 'lucide-react';
 import { getWhatsAppUrl } from '../utils/whatsapp';
 
 export const Footer: React.FC = () => {
@@ -30,6 +30,9 @@ export const Footer: React.FC = () => {
 
             <div className="pt-2 text-[11px] text-slate-500 font-mono-spec">
               Standar Regulasi: ISO 16890 • EN 1751 Class 2 • ISO 846 • CPOB BPOM 2024
+            </div>
+            <div className="text-[11px] text-slate-400 font-mono-spec">
+              Manufaktur & Rekayasa: <span className="text-slate-300 font-medium">{SITE_CONTENT.company.legalName}</span>
             </div>
           </div>
 
@@ -82,13 +85,13 @@ export const Footer: React.FC = () => {
               <p className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                 <span className="text-xs leading-relaxed">
-                  {SITE_CONTENT.footer.columnContact.address}
+                  {SITE_CONTENT.company.officeAddress}
                 </span>
               </p>
               <p className="flex items-center gap-2.5 font-mono-spec">
                 <Phone className="w-4 h-4 text-cyan-400 shrink-0" />
                 <a href={`tel:${SITE_CONTENT.company.phoneDisplay.replace(/\s+/g, '')}`} className="text-xs hover:text-white transition-colors py-0.5">
-                  {SITE_CONTENT.footer.columnContact.phone}
+                  {SITE_CONTENT.company.phoneDisplay}
                 </a>
               </p>
               <p className="flex items-center gap-2.5 font-mono-spec">
@@ -99,14 +102,20 @@ export const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-xs hover:text-white transition-colors py-0.5"
                 >
-                  {SITE_CONTENT.footer.columnContact.whatsapp} (Direct WhatsApp)
+                  {SITE_CONTENT.company.whatsappDisplay} (Direct WhatsApp)
                 </a>
               </p>
               <p className="flex items-center gap-2.5 font-mono-spec">
                 <Mail className="w-4 h-4 text-cyan-400 shrink-0" />
                 <a href={`mailto:${SITE_CONTENT.company.emailSupport}`} className="text-xs hover:text-white transition-colors py-0.5">
-                  {SITE_CONTENT.footer.columnContact.email}
+                  {SITE_CONTENT.company.emailSupport}
                 </a>
+              </p>
+              <p className="flex items-center gap-2.5 font-mono-spec">
+                <Clock className="w-4 h-4 text-emerald-400 shrink-0" />
+                <span className="text-xs text-slate-300 py-0.5">
+                  Jam Operasional: <span className="text-emerald-400 font-semibold">{SITE_CONTENT.company.operatingHours}</span>
+                </span>
               </p>
             </div>
           </div>

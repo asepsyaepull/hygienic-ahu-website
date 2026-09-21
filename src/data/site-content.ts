@@ -75,13 +75,13 @@ export const SITE_CONTENT = {
   company: {
     brandName: "AHUStar",
     brandSubtitle: "Hygienic Cleanroom HVAC",
-    legalName: "PT. AHUStar Solusi Udara Presisi",
-    whatsappNumber: "6281234567890", // Format: kode negara tanpa +
-    whatsappDisplay: "+62 812-3456-7890",
-    phoneDisplay: "+62 21 8976 5432",
-    emailSupport: "sales@ahustar.co.id",
-    officeAddress: "Kawasan Industri MM2100, Cikarang Barat, Bekasi, Jawa Barat 17530",
-    operatingHours: "Senin - Jumat: 08:30 - 17:30 WIB",
+    legalName: "PT ERAPUTRA RAHAYU ENGGINEERING",
+    whatsappNumber: "6287889979297", // Format: kode negara tanpa +
+    whatsappDisplay: "+62 878-8997-9297",
+    phoneDisplay: "+62 21 2900-3698",
+    emailSupport: "sales@renluft.co.id",
+    officeAddress: "KAWASAN BITZPOINT, JALAN HOKAIDO NOMOR 23, Desa/Kelurahan Sukamulya, Kec. Cikupa, Kab. Tangerang, Provinsi Banten, Kode Pos: 15710",
+    operatingHours: "24 Jam",
   },
 
   // Navbar Configuration
@@ -532,13 +532,13 @@ export const SITE_CONTENT = {
     },
     columnContact: {
       title: "Workshop & Kontak",
-      address: "Kawasan Industri MM2100, Cikarang Barat, Bekasi, Jawa Barat",
-      email: "sales@ahustar.co.id",
-      phone: "+62 21 8976 5432",
-      whatsapp: "+62 812-3456-7890",
+      address: "KAWASAN BITZPOINT, JALAN HOKAIDO NOMOR 23, Desa/Kelurahan Sukamulya, Kec. Cikupa, Kab. Tangerang, Provinsi Banten, Kode Pos: 15710",
+      email: "sales@renluft.co.id",
+      phone: "+62 21 2900-3698",
+      whatsapp: "+62 878-8997-9297",
     },
     disclaimer:
       "Seluruh data teknis, sertifikasi material, dan standar pengujian mengacu pada hasil tes laboratorium independen dan spesifikasi resmi prinsipal manufaktur.",
-    copyright: "© 2026 AHUStar Indonesia. Seluruh hak cipta dilindungi undang-undang.",
+    copyright: "© 2026 AHUStar • PT ERAPUTRA RAHAYU ENGGINEERING. Seluruh hak cipta dilindungi undang-undang.",
   },
 };
